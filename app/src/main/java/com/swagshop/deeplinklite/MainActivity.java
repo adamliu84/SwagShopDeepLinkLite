@@ -74,6 +74,11 @@ public class    MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void btnDynamicIDOnClick(View view){
+        Intent intent = new Intent(this, DynamicActivity.class);
+        this.startActivity(intent);
+    }
+
     public void btnProductOnClick(View view) {
         int product_id = 1;
         switch (view.getId()) {
